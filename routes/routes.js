@@ -1,3 +1,5 @@
+const mongoose = require('../MongoDB/mongoConnect.js');
+const controller = require('../controllers/controllers.js');
 const express = require('express');
 const router = express.Router();
 
@@ -6,7 +8,7 @@ const router = express.Router();
     })
     
     router.get('/users', function (req, res){
-        res.send('Cadastro de usuarios');
+        res.send('Cadastro de usuarios');    
     })
 
 module.exports = router
